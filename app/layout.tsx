@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import { ClerkProvider } from '@clerk/nextjs';
 import { Header } from '@/components/header';
 import { ThemeProvider } from '@/components/theme-provider';
+import { GeistSans, GeistMono } from 'geist/font/sans';
 import './globals.css';
 
 export const metadata: Metadata = {
@@ -18,7 +19,8 @@ export default function RootLayout({
   return (
     <ClerkProvider>
       <html lang='en' suppressHydrationWarning>
-        <body className='antialiased'>
+        <body
+          className={`${GeistSans.variable} ${GeistMono.variable} antialiased`}>
           <ThemeProvider
             attribute='class'
             defaultTheme='light'
