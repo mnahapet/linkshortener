@@ -42,13 +42,6 @@ export default function Home() {
                 </Button>
               </Link>
             </SignedIn>
-            <Button
-              variant='outline'
-              size='lg'
-              className='w-full sm:w-auto'
-              asChild>
-              <a href='#features'>Learn More</a>
-            </Button>
           </div>
         </div>
       </section>
