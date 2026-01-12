@@ -8,3 +8,6 @@ For detailed guidelines on specific topics, refer to the modular documentation i
 - [Authentication](/docs/authentication.md) - Clerk-based authentication rules and implementation guidelines
 - [UI Components](/docs/ui-components.md) - shadcn/ui component usage guidelines and standards
 
+# Clerk Authentication Proxy Usage
+
+**Important:** use `proxy.ts` instead of `middleware.ts`.

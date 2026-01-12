@@ -12,7 +12,9 @@ export function ClerkWrapper({ children }: { children: ReactNode }) {
     <ClerkProvider
       appearance={{
         baseTheme: resolvedTheme === 'dark' ? dark : undefined
-      }}>
+      }}
+      signInFallbackRedirectUrl='/dashboard'
+      signUpFallbackRedirectUrl='/dashboard'>
       {children}
     </ClerkProvider>
   );

@@ -8,8 +8,10 @@ export function ClerkProviderWrapper({ children }: { children: ReactNode }) {
   return (
     <ClerkProvider
       appearance={{
-        baseTheme: shadcn,
-      }}>
+        baseTheme: shadcn
+      }}
+      signInFallbackRedirectUrl='/dashboard'
+      signUpFallbackRedirectUrl='/dashboard'>
       {children}
     </ClerkProvider>
   );
